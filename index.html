@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./img/favicon.ico" sizes="16x16" type="image/png"> 
+</head>
+<body class="row m-0 align-items-center justify-content-center vh-100">
+
+    <div class="container">
+        <div class="row">
+            <div class="calculadora m-auto shadow-lg fadeIn col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="mt-3">
+                            <h3 class="casioFont letraBlanca d-inline-block">CASIO</h3>
+
+                            <p class="letraBlanca letraPequeña my-0 pt-2 d-inline-block ml-4">SCIENTIFIC CALCULATOR</p>
+
+                            <h3 class="fxFont letraBlanca d-inline-block">fx-95MS</h3>
+                        </div>
+                        
+                        <h5 class="text-center letraRoja mx-auto steelFont mb-4 col-md-12">S-V. P .A.M</h5>
+
+                        <div class="mx-auto mb-4 pantalla" id="display">
+                            <div class="m-auto container">
+
+                                <div>
+                                    <span class="font-weight-bold letraPequeña  d-block">M <span class="font-weight-bold letraPequeña d-inline-block float-right mr-5">D</span></span>
+                                </div>
+
+                                <div class="float-right">
+                                    <span class="font-weight-bold letraPequeña  d-block pt-1">▲‏‏‎</span>
+                                    <span class="font-weight-bold letraPequeña  d-block">▼</span>
+                                    <span class="font-weight-bold letraPequeña  d-block">🡆</span>
+                                </div>
+
+                                <span class="displayFontDos parrafoInput mb-0">Sin 64º 52º 41</span>
+                                <div class="marginNegativo">
+                                    
+                                    <div class="d-inline-block float-right pt-2">
+                                        <div class="container px-0 xDiezContainer">
+                                             <span class="exponenteResultado displayFont d-inline-block ml-2">-</span><span class="exponenteResultado displayFont">01</span>
+                                             <span class="font-weight-bold letraPequeña  d-block marginNegativoDos">x10</span>
+                                             <span class="font-weight-bold letraPequeña  d-block"> ‏‏‎ ‏‏‎ ‏‏‎i<span class="font-weight-bold letraPequeña  d-inline-block ml-2">Disp‏‏‎</span></span>
+                                        </div>
+                                     </div>
+
+                                    <span class="displayFont parrafoResultado mb-0 ml-auto float-right">8.978</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="m-auto">
+                            <div class="d-inline">
+                                <div class="d-inline-block"><div class="d-inline-block mb-2"><span class="letrasAmarillas m-auto d-block text-center letrasShift">SHIFT</span><button class="mx-1 botonGrisClaro"></button></div><span class="letrasAmarillas m-auto d-block text-center letrasShift">x!</span><button class="botonNegro mx-1">x^-1</button></div>
+                                <div class="d-inline-block"><div class="d-inline-block mb-1"><span class="m-auto d-block text-center letraRoja letraPequeña">ALPHA</span><button class="mx-1 botonGrisClaro"></button></div><span class="letrasAmarillas m-auto d-block text-center letrasShift">nPr</span><button class="botonNegro mx-1">nCr</button></div>
+                            </div>
+
+                            <div class="elipse d-inline-block mx-1">
+                                <div class="pt-3"><button class="m-auto d-block trianguloArriba"> ‏‏‎</button></div>
+                                <div class="pt-2 pl-3"><button class="trianguloIzquierda d-inline-block"> ‏‏‎</button> <button class="trianguloDerecha d-inline-block"> ‏‏‎</button></div>
+                                <div class="pb-5"><button class="m-auto d-block trianguloAbajo"> ‏‏‎</button></div>
+                            </div>
+
+                            <div class="d-inline">
+                                <div class="d-inline-block"><div class="d-inline-block mb-1"><span class="letrasAmarillas m-auto d-block text-left letraBlanca">MODE<span class="letrasAmarillas  d-inline-block text-right ml-1 letrasShift">CLR</span></span><button class="mx-1 botonGrisClaro"></button></div><span class="letrasAmarillas m-auto d-block text-left pl-2 letrasShift">Rec( <span class="d-inline-block text-right ml-1 letraRoja letraPequeña">:</span></span><button class="botonNegro mx-1">Pol(</button></div>
+                                <div class="d-inline-block"><div class="d-inline-block mb-2"><span class="letrasAmarillas m-auto d-block text-center letraBlanca">ON</span><button class="mx-1 botonGrisClaro"></button></div><span class="letrasAmarillas m-auto d-block text-center letrasShift">³√</span><button class="botonNegro mx-1">x³</button></div>
+                            </div>
+                        </div>
+
+                        <div class="m-auto">
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">d/c</span><button class="botonNegro mx-1">a b/c</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"></span><button class="botonNegro mx-1">√</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"></span><button class="botonNegro mx-1">x²</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">x√</span><button class="botonNegro mx-1">^</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">10^x</span><button class="botonNegro mx-1">log</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-left pl-2 letrasShift">e^x <span class="d-inline-block text-right ml-2 letraRoja letraPequeña">e</span></span><button class="botonNegro mx-1">in</button></div>
+                        </div>
+
+                        <div class="m-auto">
+                            <div class="d-inline-block"><span class="m-auto d-block text-right pr-2 letraRoja letraPequeña">A</span><button class="botonNegro mx-1">(-)</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-left pl-2 letrasShift">🠔 <span class="d-inline-block text-right ml-3 letraRoja letraPequeña">B</span></span><button class="botonNegro mx-1">○,,,</button></div>
+                            <div class="d-inline-block"><span class="m-auto d-block text-right letraRoja letraPequeña pr-2">C</span><button class="botonNegro mx-1">hyp</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-left pl-2 letrasShift">sin-1 <span class="d-inline-block text-right ml-1 letraRoja letraPequeña">D</span></span><button class="botonNegro mx-1">sin</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-left pl-2 letrasShift">cos-1 <span class="d-inline-block text-right ml-1 letraRoja letraPequeña">E</span></span><button class="botonNegro mx-1">cos</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-left pl-2 letrasShift">tan-1 <span class="d-inline-block text-right ml-1 letraRoja letraPequeña">F</span></span><button class="botonNegro mx-1">tan</button></div>
+                        </div>
+
+                        <div class="m-auto">
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">STO</span><button class="botonNegro mx-1">RCL</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">🠔</span><button class="botonNegro mx-1">ENG</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"></span><button class="botonNegro mx-1">(</button></div>
+                            <div class="d-inline-block"><span class="m-auto d-block text-right pr-2 letraRoja letraPequeña">X</span><button class="botonNegro mx-1">)</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-left pl-2 letrasShift">; <span class="d-inline-block text-right ml-4 letraRoja letraPequeña">Y</span></span><button class="botonNegro mx-1">,</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-left pl-2 letrasShift">M- <span class="d-inline-block text-right ml-2 letraRoja letraPequeña">M</span></span><button class="botonNegro mx-1">M+</button></div>
+                        </div>
+
+                        <!--Botones cuadrados-->
+                        <div class="m-auto">
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"></span><button class="botonGris mx-1">7</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"></span><button class="botonGris mx-1">8</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"></span><button class="botonGris mx-1">9</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">INS</span><button class="botonTamaño mx-1 botonRojo">DEL</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift"><span class="letrasAmarillas m-auto d-inline text-center letraAzul">DT </span>CL</span><span class="letrasAmarillas m-auto d-block text-center letrasShift">OFF</span><button class="botonTamaño mx-1 botonRojo">AC</button></div>
+                        </div>
+                        
+                        <div class="m-auto">
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"> ‏‏‎<!--Caracter vacio--></span><button class="botonGris mx-1">4</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"> ‏‏‎<!--Caracter vacio--></span><button class="botonGris mx-1">5</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"> ‏‏‎<!--Caracter vacio--></span><button class="botonGris mx-1">6</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"> ‏‏‎<!--Caracter vacio--></span><button class="botonGris mx-1">X</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"> ‏‏‎<!--Caracter vacio--></span><button class="botonGris mx-1">÷</button></div>
+                        </div>
+
+                        <div class="m-auto">
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">S-SUM</span><button class="botonGris mx-1">1</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">S-VAR</span><button class="botonGris mx-1">2</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"></span><button class="botonGris mx-1">3</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"></span><button class="botonGris mx-1">+</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center"></span><button class="botonGris mx-1">-</button></div>
+                        </div>
+
+                        <div class="m-auto">
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">Rnd</span><button class="botonGris mx-1">0</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">Ran</span><button class="botonGris mx-1">.</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">𝜋</span><button class="botonGris mx-1">Exp</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">DRG▸</span><button class="botonGris mx-1">Ans</button></div>
+                            <div class="d-inline-block"><span class="letrasAmarillas m-auto d-block text-center letrasShift">Re⬌Im %</span><button class="botonGris mx-1">=</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-2">
+                <div class="col-md-2 m-auto">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 circleButtonDiv"><button class="m-auto d-block botonCirculo botonTemaUno" id="blueTheme"> ‏‏‎ ‏‏‎</button></div>
+                            <div class="col-md-4 circleButtonDiv"><button class="m-auto d-block botonCirculo botonTemaDos" id="bWTheme"> ‏‏‎ ‏‏‎</button></div>
+                            <div class="col-md-4 circleButtonDiv"><button class="m-auto d-block botonCirculo botonTemaTres" id="originalTheme"> ‏‏‎ ‏‏‎</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

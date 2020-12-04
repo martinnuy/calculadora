@@ -1,0 +1,319 @@
+@font-face{
+    font-family: "Steel";
+    src: url(../font/MontalbanBold.otf);
+}
+@font-face{
+    font-family: "Casio";
+    src: url(../font/Microgramma.otf);
+}
+@font-face{
+    font-family: "fx";
+    src: url(../font/tactiieitcstd-bolditalic.otf);
+}
+@font-face{
+    font-family: "Display";
+    src: url(../font/Display.ttf);
+}
+@font-face{
+    font-family: "Ninepin";
+    src: url(../font/ninepin.ttf);
+}
+
+body{
+    background-color: #c2626c;
+    background-image: linear-gradient(70deg, #888888 0%, #cacaca 50%, #888888 100%);
+}
+
+.casioFont{
+    font-family: Casio;
+}
+
+.steelFont{
+    font-family:"Steel";
+}
+
+.fxFont{
+    font-family: "fx";
+    font-size: 25px;
+}
+
+
+.displayFont{
+    font-family: "Display";
+}
+
+.displayFontDos{
+    font-family: "Ninepin";
+}
+
+.parrafoResultado{
+    font-size: 53px;
+    height: 55px;
+}
+
+.parrafoInput{
+    font-size: 34px;
+}
+
+.marginNegativo{
+    margin-top: -25px;
+}
+
+.marginNegativoDos{
+    margin-top: -8px;
+}
+
+.deg{
+    background-color: black;
+    color: rgb(179, 185, 110);
+    height: 12px;
+    width: 12px;
+}
+
+.xDiez{
+    padding-top: -25px;
+    margin-top: -5px;
+}
+
+.xDiezContainer{
+    height: 69px;
+}
+
+
+.exponenteResultado{
+    font-size: 25px;
+}
+
+
+.letraPequeña{
+    font-size: 10px;
+}
+
+.calculadora{
+    background-color:rgb(44, 55, 58);
+    height: 695px;
+    border-radius: 9px;
+}
+
+.pantalla{
+    width: 331px;
+    height: 107px;
+    background-color: rgb(179, 185, 110);
+    border-radius: 10px;
+}
+
+.botonGris{
+    background-color: rgb(128, 134, 137);
+    width: 55px;
+    height: 34px;
+    border-radius: 8px;
+    color: white;
+}
+
+.botonNegro{
+    background-color:rgb(90, 94, 97);
+    height: 26px;
+    width: 43px;
+    color: white;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.botonGrisClaro{
+    background-color:rgb(181, 179, 189);
+    border-radius: 12px;
+    height: 24px;
+    width: 43px;
+}
+
+.botonTamaño{
+    width: 55px;
+    height: 34px;
+    border-radius: 8px;
+    color: white;
+}
+
+.botonRojo{
+    background-color: rgb(194, 98, 108);
+}
+
+button{
+    border-style: none;
+}
+
+button:focus {
+    outline: none;
+
+}
+
+button:active {
+    background-color:  rgb(99, 103, 105)!important;
+}
+
+.activeEfect:active{
+    background-color:  rgb(99, 103, 105);
+}
+
+.botonRojo:active {
+    background-color:   rgb(141, 73, 80);
+}
+
+.elipse{
+    clip-path: ellipse(41% 34% at 51% 46%);
+    background-color: rgb(181, 179, 189);
+    width: 100px;
+    height: 100px;
+}
+
+
+.letrasAmarillas{
+    color: rgb(157, 148, 71);
+    font-size: 10px;
+}
+
+.letraAzul{
+    color: rgb(103, 109, 138);
+}
+
+.letraRoja{
+    color: rgb(194, 98, 108) ;
+}
+
+.letraBlanca{
+    color: rgb(224, 223, 223);
+}
+
+.letrasShift{
+    color: rgb(157, 148, 71);
+}
+
+.trianguloArriba{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    height: 15px;
+    background-color: rgba(144, 146, 146, 0.623);
+}
+
+.trianguloIzquierda{
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    height: 15px;
+    background-color: rgba(144, 146, 146, 0.623);
+}
+
+.trianguloDerecha{
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);    
+    height: 15px;
+    background-color: rgba(144, 146, 146, 0.623);
+    margin-left: 38px;
+}
+
+.trianguloAbajo{
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    height: 15px;
+    background-color: rgba(144, 146, 146, 0.623);
+}
+
+.botonCirculo{
+    clip-path: circle(36.1% at 50% 50%);
+}
+
+.botonTemaUno{
+    background-image: linear-gradient(70deg, #58aeb1 0%, #6b6b6b 100%);
+}
+
+.botonTemaDos{
+    background-image: linear-gradient(70deg, #eacdd0 0%, #b3b3b3 100%);
+}
+
+.botonTemaTres{
+    background-image: linear-gradient(70deg, #b45050 0%, #e0e25d 100%);
+}
+
+/*Fade animaion*/
+
+.fadeIn{
+    animation: fadeIn 1s;
+    }
+    
+    
+    @keyframes fadeIn{
+      from{
+        opacity: 0;
+      
+    }
+    to{
+        opacity: 1;
+      
+    }
+    }
+
+    /*Responsive*/
+    @media only screen and (max-width: 1199px) {
+        .botonCirculo {
+            clip-path: circle(16% at 50% 50%);
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        .circleButtonDiv{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+   @media only screen and (max-width: 408px) {
+        .botonGris{
+            width: 44px;
+        }
+        .botonTamaño{
+            width: 44px;
+        }
+        .elipse{
+            width: 92px;
+        }
+        .botonNegro{
+            width: 30px;
+        }
+        .botonGrisClaro{
+            width: 30px;
+        }
+        .trianguloDerecha{
+            margin-left: 31px;
+        }
+        .parrafoInput {
+            font-size: 25px;
+        }
+        .calculadora{
+            height: 730px;
+        }
+        .botonCirculo {
+            clip-path: circle(36.1% at 50% 50%);
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .botonGris{
+            width: 39px;
+        }
+        .botonTamaño{
+            width: 39px;
+        }
+        .elipse{
+            width: 85px;
+        }
+        .botonNegro{
+            width: 25px;
+            font-size: 9px;
+        }
+        .botonGrisClaro{
+            width: 25px;
+        }
+        .trianguloDerecha{
+            margin-left: 24px;
+        }
+        .parrafoInput {
+            font-size: 25px;
+        }
+        .calculadora{
+            height: 730px;
+        }
+    }
